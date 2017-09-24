@@ -4,7 +4,7 @@
     \textbf{\Large $contact.name.first$ $contact.name.last$} \hfill
     $contact.address.county$, $contact.address.state$ \hfill
     ($contact.phone.area_code$) $contact.phone.number$ \hfill
-    $contact.email$ \hfill
+    \href{$contact.email.link$}{$contact.email.address$} \hfill
     \href{$contact.linkedin.url$}{$contact.linkedin.text$} \hfill
     \href{$contact.github.url$}{$contact.github.text$}
 }
@@ -27,7 +27,7 @@ $if(skills-section)$
 \sectionheader{$skills-section.heading$}
 \vspace{-15pt}
 \begin{description}[align=right,labelwidth=\skillswidth]
-\setlength\itemsep{0pt}
+\setlength\itemsep{-2pt}
 $for(skills-section.skills)$
 \item [$skills-section.skills.heading$:]
 \commasep{\ensuremath{\cdot}}
@@ -86,7 +86,7 @@ $for(education-section.institutions)$
 \education
 {$education-section.institutions.degree$}
 {$education-section.institutions.gpa$}
-{$education-section.institutions.name$}
+{\href{$education-section.institutions.url$}{$education-section.institutions.name$}}
 {$education-section.institutions.date$}
 \begin{itemize}
 \setlength\itemsep{0pt}
