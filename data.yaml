@@ -180,7 +180,7 @@ experience-sections:
               salary: '110,000'
               bullets:
                 - >
-                  Designed cross-platform, test automation framework for the
+                  Developed cross-platform, test automation framework for the
                   company's mobile SDK products.
                   It runs on Linux and OS X, operates on Android and
                   iOS devices, is extensible and provides end-to-end automation,
@@ -522,8 +522,7 @@ publications-section:
           year: '2010'
           link:
               >
-              'http://www.dot.ca.gov/newtech/researchreports/reports/2008/final\
-              _report_project_06-03_03-13-08.pdf'
+              http://www.sciencedirect.com/science/article/pii/S1366554509000398
           proceedings:
               >
               Transportation Research Part E: Logistics and Transportation
