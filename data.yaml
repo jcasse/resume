@@ -119,6 +119,7 @@ skills-section:
           items:
             - Emacs
             - Vim
+            - R Studio
             - Android Studio
             - Xcode
             - Eclipse
