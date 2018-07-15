@@ -15,6 +15,13 @@ contact:
         zip code: '90094'
         county: Los Angeles
     address_history:
+        - name: Sausalito - Villas at Playa Vista
+          street: '12411 W Fielding Cir'
+          apt: '5127'
+          city: Playa Vista
+          state: CA
+          zip code: '90094'
+          county: Los Angeles
         - name: Bannockburn
           street: 3100 Riverside Dr
           apt: '462'
@@ -110,10 +117,10 @@ skills-section:
             - \LaTeX
         - heading: Productivity
           items:
+            - Emacs
             - Vim
             - Android Studio
             - Xcode
-            - MS Visual Studio
             - Eclipse
             - Git
             - Gerrit
@@ -123,12 +130,12 @@ skills-section:
         - heading: Platforms
           items:
             - Linux
+            - Docker
             - Tomcat
             - SQL Server
             - Oracle
             - JDBC
             - OpenGL
-            - wxWidgets
         - heading: Graphing
           items:
             - Gnuplot
@@ -137,6 +144,7 @@ skills-section:
             - AutoCAD
             - Bokeh
             - ggplot2
+            - wxWidgets
 
 experience-sections:
 
@@ -377,6 +385,12 @@ projects-section:
 
     heading: Other Technical Experience
     projects:
+        - name: Web IDE
+          year: '2018'
+          description:
+            >
+            Web-based IDE for AI cognitive engine, deployed in Docker
+          languages: Python, Flask, Javascript, CSS, HTML
         - name: Experimenter
           year: '2015'
           description:
@@ -401,12 +415,12 @@ projects-section:
             >
             Genetic algorithm for optimal scheduling of convoys on shared roads
           languages: \CPP, Java
-        - name: The Game of Life
-          year: '2006'
-          description:
-            >
-            Implementation of the board game for software engineering course
-          languages: UML, Java
+#        - name: The Game of Life
+#          year: '2006'
+#          description:
+#            >
+#            Implementation of the board game for software engineering course
+#          languages: UML, Java
 
 education-section:
 
