@@ -1,84 +1,49 @@
 # Resume Builder
 
-Adapted from [https://github.com/mrzool/cv-boilerplate](https://github.com/mrzool/cv-boilerplate).
+Adapted from
+[https://github.com/mrzool/cv-boilerplate]
+(https://github.com/mrzool/cv-boilerplate).
 
-A boilerplate to ease the pain of building and maintaining a CV or resume using LaTeX.
-
-Refer to [http://mrzool.cc/writing/typesetting-automation/](http://mrzool.cc/writing/typesetting-automation/) for more ideas.
+Refer to
+[http://mrzool.cc/writing/typesetting-automation/]
+(http://mrzool.cc/writing/typesetting-automation/) for more ideas.
 
 ## Intro
 
-Separating presentation from content makes life easier. The typical content of a CV is a perfect fit for a YAML file due to its structured nature:
-
-```YAML
----
-name: Friedrich Nietzsche
-address:
-- Humboldtstraße 36
-- 99425 Weimar
-- Prussia
-email: friedrich@thevoid.de
-# ...
-experience:
-- years: 1879--1889
-  employer: Freiberufler
-  job: Freier Philisoph
-  city: Sils-Maria
-- years: 1869–-1879
-  employer: Universität Basel
-  job: Professor für klassische Philologie
-  city: Basel
-```
-
-That makes super easy to update a CV while keeping a consistent structure.
-
-Thanks to [Pandoc](http://pandoc.org/), we can then access our data from `document.tex` using a special notation. Iterating on repetitive data structures becomes trivial:
-
-```latex
-$for(experience)$
-  $experience.years$\\
-  \textsc{$experience.employer$}\\
-  \emph{$experience.job$}\\
-  $experience.city$\\[.2cm]
-$endfor$
-```
-
-LaTeX takes then care of the typesetting with its usual elegance. Below a preview of the final result. Check out the [output](resume.pdf) to see the compiled PDF.
-
-![preview](preview.png)
-
-With this method, you can keep your entire CV encoded in a single YAML file, put it under version control (into a gist, for instance), and generate a PDF on the fly when needed. You can also easily export it to other formats, like MS Word docx and like HTML for web publishing (I've heard [Jekyll](http://jekyllrb.com/) likes YAML). Convenient, portable and time-proof.
+Separating presentation from content makes life easier. Data is kept in a YAML
+file, which is a simple data format for human consumption. The formatting is
+defined in a LaTeX file. Pandoc embeds the data from the YAML file into the
+LaTeX file to produce the PDF.
 
 ## Dependencies
 
-1. LaTeX with the following extra packages: `fontspec` `geometry` `multicol` `xunicode` `xltxtra` `marginnote` `sectsty` `ulem` `hyperref` `polyglossia`
-2. [Pandoc](http://pandoc.org/), the universal document converter.
-3. gnome-open for viewing the PDF in Linux.
+1. LaTeX with the following extra packages: `fontspec` `geometry` `multicol`
+`xunicode` `xltxtra` `marginnote` `sectsty` `ulem` `hyperref` `polyglossia`
+2. [MacTeX](http://www.tug.org/mactex) in OS X
+3. [Lato 2.0](http://www.latofonts.com/lato-free-fonts) TT fonts
+4. [Pandoc](http://pandoc.org/), the universal document converter
+5. gnome-open for viewing the PDF in Linux
 
-To install LaTeX on Mac OS X, I recommend getting the smaller version BasicTeX from [here](https://tug.org/mactex/morepackages.html) and installing the additional packages with `tlmgr` afterwards. Same goes for Linux: install `texlive-base` with your package manager and add the needed additional packages later.
+## Usage
 
-To install pandoc on Mac OS X, run `brew install pandoc`. To install it on Linux, refer to the [official docs](http://pandoc.org/installing.html).
-
-## Getting started
-
-1. Fill `data.yml` with your personal details, work experience, education, and desired settings.
+1. Fill `data.yml` with your personal details, work experience, education, and
+desired settings.
 2. Run `make` to compile the PDF.
-3. Tweak on `document.tex` and `preamble.tex` until you're satisfied with the result.
+3. Tweak on `document.tex` and `preamble.tex` until you're satisfied with the
+result.
 
 **Note**: this template needs to be compiled with XeTeX.
 
-### Note for Windows users
-
-Although I didn't test it, you can probably use this on Windows, too. Both [Pandoc](http://pandoc.org/installing.html) and LaTeX can be installed on Windows (I recommend [MiKTeX](http://miktex.org/) for that) and you should be able to run makefiles on Windows through [Cygwin](https://www.cygwin.com/). If that's too much hassle, this command should do the trick in Powershell:
-
-    pandoc details.yml -o output.pdf --template=template.tex --latex-engine=xelatex
-
 ## Available settings
 
-- **`mainfont`**: Hoefler Text is the default, but every font installed on your system should work out of the box (thanks, XeTeX!)
+- **`mainfont`**: Hoefler Text is the default, but every font installed on your
+system should work out of the box (thanks, XeTeX!)
 - **`fontsize`**: Possible values here are 10pt, 11pt and 12pt.
-- **`lang`**: Sets the main language through the `polyglossia` package. This is important for proper hyphenation, among other things.
-- **`geometry`**: A string that sets the margins through `geometry`. Read [this](https://www.sharelatex.com/learn/Page_size_and_margins) to learn how this package works.
+- **`lang`**: Sets the main language through the `polyglossia` package. This is
+important for proper hyphenation, among other things.
+- **`geometry`**: A string that sets the margins through `geometry`. Read
+[this](https://www.sharelatex.com/learn/Page_size_and_margins)
+to learn how this package works.
 
 ## Recommended readings
 
