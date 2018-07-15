@@ -1,4 +1,4 @@
-# Resume Builder
+# Resume
 
 Adapted from
 [https://github.com/mrzool/cv-boilerplate]
@@ -8,14 +8,12 @@ Refer to
 [http://mrzool.cc/writing/typesetting-automation/]
 (http://mrzool.cc/writing/typesetting-automation/) for more ideas.
 
-## Intro
-
 Separating presentation from content makes life easier. Data is kept in a YAML
 file, which is a simple data format for human consumption. The formatting is
 defined in a LaTeX file. Pandoc embeds the data from the YAML file into the
 LaTeX file to produce the PDF.
 
-## Dependencies
+# Dependencies
 
 1. LaTeX with the following extra packages: `fontspec` `geometry` `multicol`
 `xunicode` `xltxtra` `marginnote` `sectsty` `ulem` `hyperref` `polyglossia`
@@ -24,7 +22,7 @@ LaTeX file to produce the PDF.
 4. [Pandoc](http://pandoc.org/), the universal document converter
 5. gnome-open for viewing the PDF in Linux
 
-## Usage
+# Usage
 
 1. Fill `data.yml` with your personal details, work experience, education, and
 desired settings.
@@ -34,7 +32,7 @@ result.
 
 **Note**: this template needs to be compiled with XeTeX.
 
-## Available settings
+# Available settings
 
 - **`mainfont`**: Hoefler Text is the default, but every font installed on your
 system should work out of the box (thanks, XeTeX!)
@@ -45,28 +43,14 @@ important for proper hyphenation, among other things.
 [this](https://www.sharelatex.com/learn/Page_size_and_margins)
 to learn how this package works.
 
-## Recommended readings
-
-- [Typesetting Automation](http://mrzool.cc/writing/typesetting-automation/), my article about this project with in-depth instructions and some suggestions for an ideal workflow.
-- [Why I do my résumé in LaTeX](http://www.toofishes.net/blog/why-i-do-my-resume-latex/) by Dan McGee
-- [What are the benefits of writing resumes in TeX/LaTeX?](http://tex.stackexchange.com/questions/11955/what-are-the-benefits-of-writing-resumes-in-tex-latex) on TeX Stack Exchange
-- [Typesetting your academic CV in LaTeX](http://nitens.org/taraborelli/cvtex) by Dario Taraborelli
-- [Résumé advices](http://practicaltypography.com/resumes.html) from Butterick's Practical Typography 
-- [Dimitrie Hoekstra](https://medium.com/@dimitrieh/a-curriculum-vitae-latex-typesetting-automation-adventure-with-gitlab-6ac233c0b66b#.v66feylcu) takes automation to the next level thanks to GitLab's continuous integration feats
-
-## Resources
+# Resources
 
 - Refer to [Pandoc's documentation](http://pandoc.org/MANUAL.html#templates) to learn more about how templates work.
 - If you're not familiar with the YAML syntax, [here](http://learnxinyminutes.com/docs/yaml/)'s a good overview.
 - If you want to edit the template but LaTeX scares you, these [docs](https://www.sharelatex.com/learn/Main_Page) put together by ShareLaTeX cover most of the basics and are surprisingly kind to the beginner.
 - Odds are your question already has an answer on [TeX Stack Exchange](https://www.sharelatex.com/learn/Main_Page). Also, pretty friendly crowd in there.
 
-## See also
-
-- [invoice-boilerplate](https://github.com/mrzool/invoice-boilerplate) — Simple automated LaTeX invoicing system
-- [letter-boilerplate](https://github.com/mrzool/letter-boilerplate) — Typeset your important letters without leaving your text editor
-
-## License
+# License
 
 This repository contains a modified version of Mattia Tezzele's [cv-boilerplate](https://github.com/mrzool/cv-boilerplate), which in turn is a modified version of Dario Taraborelli's [cvtex](https://github.com/dartar/cvtex) template.
 
