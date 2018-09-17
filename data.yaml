@@ -582,6 +582,8 @@ miscellanous-section:
     competitions:
         - name: ACM Southern California Regional Programming Contest, 2005
           url: http://socalcontest.org
+          members: Kevin Harness and Carla Hernandez
+          coach: Steven Gold and Paul Woo
 
     heading: Awards
     awards:
