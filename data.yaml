@@ -110,11 +110,11 @@ skills-section:
             - R
             - Matlab
             - SQL
+            - Lisp
+            - \LaTeX
             - XML
             - JSON
             - YAML
-            - HTML
-            - \LaTeX
         - heading: Productivity
           items:
             - Emacs
