@@ -1,0 +1,119 @@
+\input{preamble}
+
+\newcommand{\headerinfo}{
+    \textbf{\Large $contact.name.first$ $contact.name.last$} \hfill
+    $contact.address.county$, $contact.address.state$ \hfill
+    ($contact.phone.area_code$) $contact.phone.number$ \hfill
+    \href{$contact.email.link$}{$contact.email.address$} \hfill
+    \href{$contact.linkedin.url$}{$contact.linkedin.text$} \hfill
+    \href{$contact.github.url$}{$contact.github.text$}
+}
+
+\begin{document}
+
+\thispagestyle{firstpageheaderstyle}
+
+\pagestyle{subsequentpageheaderstyle}
+
+$if(summary-section)$
+\sectionheader{$summary-section.heading$}
+\begin{justify}
+\vspace{-7.5pt}
+$summary-section.content$
+\end{justify}
+$endif$
+
+$if(skills-section)$
+\sectionheader{$skills-section.heading$}
+\vspace{-15pt}
+\begin{description}[align=right,labelwidth=\skillswidth]
+\setlength\itemsep{-2pt}
+$for(skills-section.skills)$
+\item [$skills-section.skills.heading$:]
+\commasep{\ensuremath{\cdot}}
+$for(skills-section.skills.items)$
+$skills-section.skills.items$
+$endfor$
+\endcommasep
+$endfor$
+\end{description}
+$endif$
+
+$if(experience-sections)$
+$for(experience-sections)$
+\sectionheader{$experience-sections.heading$}
+$for(experience-sections.companies)$
+\company
+{$experience-sections.companies.name$}
+{$experience-sections.companies.url$}
+{$experience-sections.companies.description$}
+$for(experience-sections.companies.jobs)$
+\jobtitle
+{$experience-sections.companies.jobs.title$}
+{$experience-sections.companies.jobs.date$}
+\begin{itemize}
+\setlength\itemsep{-2pt}
+$for(experience-sections.companies.jobs.bullets)$
+\item $experience-sections.companies.jobs.bullets$
+$endfor$
+\end{itemize}
+\vspace{-1pt}
+$endfor$
+$endfor$
+\vspace{-4pt}
+$endfor$
+$endif$
+
+$if(projects-section)$
+\sectionheader{$projects-section.heading$}
+\vspace{-15pt}
+\begin{description}[align=left]
+\setlength\itemsep{0pt}
+$for(projects-section.projects)$
+\item
+[$projects-section.projects.name$]
+($projects-section.projects.year$)
+$projects-section.projects.description$.
+$projects-section.projects.languages$
+$endfor$
+\end{description}
+\vspace{-10pt}
+$endif$
+
+$if(education-section)$
+\sectionheader{$education-section.heading$}
+$for(education-section.institutions)$
+\education
+{$education-section.institutions.degree$}
+{$education-section.institutions.gpa$}
+{\href{$education-section.institutions.url$}{$education-section.institutions.name$}}
+{$education-section.institutions.date$}
+\begin{itemize}
+\setlength\itemsep{0pt}
+\item
+$education-section.institutions.work.type$:
+$education-section.institutions.work.description$
+\end{itemize}
+$endfor$
+$endif$
+\vspace{-15pt}
+
+$if(publications-section)$
+\sectionheader{$publications-section.heading$}
+$for(publications-section.publications)$
+\vspace{-15pt}
+\publication
+{$publications-section.publications.author$}
+{$publications-section.publications.year$}
+{$publications-section.publications.title$}
+{$publications-section.publications.link$}
+{$publications-section.publications.proceedings$}
+$endfor$
+$endif$
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

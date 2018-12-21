@@ -1,0 +1,621 @@
+%YAML 1.2
+---
+contact:
+    name:
+        first: Juan
+        middle: Ignacio
+        last: Casse
+        second: Echeandia
+    address:
+        name: Sausalito - Villas at Playa Vista
+        street: '12411 W Fielding Cir'
+        apt: '5127'
+        city: Playa Vista
+        state: CA
+        zip code: '90094'
+        county: Los Angeles
+    address_history:
+        - name: Sausalito - Villas at Playa Vista
+          street: '12411 W Fielding Cir'
+          apt: '5127'
+          city: Playa Vista
+          state: CA
+          zip code: '90094'
+          county: Los Angeles
+        - name: Bannockburn
+          street: 3100 Riverside Dr
+          apt: '462'
+          city: Los Angeles
+          state: CA
+          zip code: 90027
+          county: Los Angeles
+        - name: International Village
+          street: 1100 Everton Place 
+          apt: '211'
+          city: Riverside
+          state: CA
+          zip code: 92507
+          county: Los Angeles
+        - name: Park Ocean Condominium
+          street: 5585 Coast Hwy,
+          apt: ''
+          city: Long Beach
+          state: CA
+          zip code: 90804
+          county: Los Angeles
+        - name: House
+          street: 8341 Atlanta Ave
+          apt: na
+          city: Huntington Beach
+          state: CA
+          zip code: 92646
+          county: Orange County
+        - name: Villa Azure
+          street: 5700 W Centinela Ave
+          apt: ''
+          city: Los Angeles
+          state: CA
+          zip code: 90045
+          county: Los Angeles
+        - name: Quintas de Cabo Rojo
+          street: 136 Calle Picaflor
+          apt: na
+          city: Cabo Rojo
+          state: PR
+          zip code: 00623
+          county: Cabo Rojo
+    email:
+        address: jcasse@gmail.com
+        link: mailto:jcasse@gmail.com
+    linkedin:
+        text: linkedin.com/in/juan-casse
+        url: https://www.linkedin.com/in/juan-casse
+    github:
+        text: github.com/jcasse
+        url: https://github.com/jcasse
+    phone:
+        area_code: '310'
+        number: '913-7306'
+    phone_history:
+        - area_code: '951'
+          number: '312-5241'
+        - area_code: '310'
+          number: '622-3353'
+
+summary-section:
+
+    heading: Software Engineer
+    content:
+        >
+        Trained in machine learning, my passion lies in software engineering.
+        My ideal job combines software development with implementing of machine
+        learning algorithms and AI. Years as a graduate student researcher gave
+        me the tools to work independently while a previous engineering
+        career in the field of medical device manufacturing gave me the
+        experience of working on large-scale projects with
+        cross-fucntional teams.
+
+skills-section:
+
+    heading: Technical Tools
+    skills:
+        - heading: Languages
+          items:
+            - C
+            - C\texttt{++}
+            - Python
+            - Java
+            - Objective-C
+            - Bash
+            - R
+            - Matlab
+            - SQL
+            - Lisp
+            - \LaTeX
+            - XML
+            - JSON
+            - YAML
+        - heading: Productivity
+          items:
+            - Emacs
+            - Vim
+            - R Studio
+            - Android Studio
+            - Xcode
+            - Eclipse
+            - Git
+            - Gerrit
+            - Jira
+            - Confluence
+            - Slack
+        - heading: Platforms
+          items:
+            - Linux
+            - Docker
+            - Tomcat
+            - SQL Server
+            - Oracle
+            - JDBC
+            - OpenGL
+        - heading: Graphing
+          items:
+            - Gnuplot
+            - Graphviz
+            - Xfig
+            - AutoCAD
+            - Bokeh
+            - ggplot2
+            - wxWidgets
+
+experience-sections:
+
+    - heading: Experience in Industry
+      companies:
+
+        - name: Trusted Autonomy, a Beyond Limits company
+          url: http://www.beyond.ai
+          description:
+            >
+            Leader in industrial-grade Artificial General Intelligence (AGI)
+            software
+          address: 400 N Brand Blvd, Glendale, CA 91203
+          ceo: AJ
+          cto: Mark L. James
+          jobs:
+            - date: 'October 2017 - present'
+              title: AI Software Engineer
+              salary: '126,000'
+              bullets:
+                - >
+                  Develop artificial intelligence software
+                - >
+                  Implement machine learning algorithms
+
+        - name: InAuth, Inc., an American Express company
+          url: https://www.inauth.com
+          description:
+            >
+            Leader in mobile-first authentication and fraud prevention for
+            mobile applications and browsers
+          address: 227 Broadway Suite 200, Santa Monica, CA 90401
+          president: Lisa Stanton
+          cto_cofounder: Paul Marsolan
+          engineering_director: Charles Crupper
+          qa_lead: Les Honnibal
+          email: jcasse@inauth.com
+          jobs:
+            - date: 'July 2016 - October 2017'
+              title: SDET
+              salary: '110,000'
+              bullets:
+                - >
+                  Developed cross-platform, test automation framework for the
+                  company's mobile SDK products.
+                  It runs on Linux and OS X, operates on Android and
+                  iOS devices, is extensible and provides end-to-end automation,
+                  writing results to an MS Excel spreadsheet in the cloud. It
+                  reduces a month of work of three QA testers to two hours.
+
+        - name: Children's Hospital Los Angeles
+          url: http://www.chla.org
+          description:
+            >
+            Award-winning, non-profit, research hospital providing
+            life-saving care to children
+          address: 4650 Sunset Blvd, Los Angeles, CA 90027
+          chair_anesthesiology_critical_care_medicine_accm: Randall Wetzel
+          lead_data_scientist: Jon Williams
+          email: jcasse@chla.ucs.edu
+          jobs:
+            - date: 'December 2014 – July 2016'
+              title: Data Scientist
+              salary: '100,000'
+              bullets:
+                - >
+                  Developed algorithm to diagnose patients. It transformed each
+                  patient's heterogeneous, messy and irregularly sampled
+                  longitudinal data from electronic health records into a
+                  fixed-length
+                  feature vector, relative to every other patient in the ICU.
+                  The interrelation between
+                  variables and their timing information was modeled in a
+                  principled way as a marked point process.
+                  The number of clusters was automatically selected by the
+                  algorithm.
+                - >
+                  Implemented packages in R and Python for data cleaning and
+                  analysis
+
+        - name: Google, Inc.
+          url: https://www.google.com/intl/en/about
+          description:
+            >
+            Multinational, technology company specializing in Internet-related
+            services and products
+          address: 1600 Amphitheatre Pkwy, Mountain View, CA 94043
+          host: Grant Grundler grundler@google.com
+          jobs:
+            - date: 'June 2013 -- September 2013'
+              title: Software Engineering Intern
+              salary: '102,000'
+              bullets:
+                - >
+                  Contributed to open source software, Flexible I/O Tester (fio)
+                - >
+                  Developed Linux utility in C to test data integrity and
+                  retention of storage devices
+              more:
+                - >
+                  Wrote storage qualification tests in Python to share with
+                  hardware vendors
+
+    - heading: Experience in Academia
+      companies:
+
+        - name: University of California Riverside
+          url: http://www.ucr.edu
+          description:
+            >
+            Public research university part of the University of California
+            system
+          jobs:
+            - date: 'June 2012 -- September 2014'
+              title: Graduate Student Researcher
+              supervisor: Christian Shelton
+              bullets:
+                - >
+                  Implemented clustering algorithms (20K lines of \CPP code) in
+                  support of my research
+            - date: 'April 2012 -- June 2012'
+              title: Associate Instructor
+              bullets:
+                - 'Taught CS 14 Introduction to Data Structures and Algorithms'
+            - date: 'September 2009 -- June 2013'
+              title: Teaching Assistant
+              bullets:
+                - >
+                  Held laboratory sessions, graded assignments, and held office
+                  hours for various CS courses
+              more:
+                - >
+                  Automated grading and reporting of coding homework using
+                  Python, Bash and C++ test harnesses
+
+        - name: Harvey Mudd College
+          url: https://www.hmc.edu
+          description:
+            >
+            Top-ranked college of science, engineering and mathematics
+          jobs:
+            - date: 'January 2011 -- May 2011'
+              title: Instructor
+              supervisor: Christine Alvarado
+              bullets:
+                - 'Taught CS 151 Artificial Intelligence'
+
+    - heading: Previous Professional Experience
+      summary:
+          - Designed and built automated equipment for medical device
+            manufacturing (4 years)
+          - Scheduled project implementation in machine shop
+          - Certified Green Belt
+          - Implemented process improvement projects, incresing yield from 75\%
+            to 85\% and maintaining 6-sigma levels and 85\% OEE (7 years)
+          - Managed engineering interns woking on various projects
+          - Successfully proposed change in design and allocation of funds to
+            management of new technology manufacturing process
+          - Regularly presented project plans, progress, expenditures and
+            results to management
+          - Regularly collaborated with other teams and manufacturing plants
+      companies:
+
+        - name: Lifescan, a Johnson \& Johnson company
+          url: http://www.lifescan.com
+          description:
+            >
+            Manufacturer of blood glucose monitoring systems for home and
+            hospital use
+          plant_manager: Eduardo Baez, Lourdes Ruiz
+          qa_manager: Gloria Colon, Edwin Santos
+          jobs:
+            - date: 'January 2002 -- December 2004'
+              title: Staff Engineer
+              salary: '75,000'
+              supervisor: Felipe Collazo, Carlos Rodriguez
+              bullets:
+                - >
+                  Introduced new technology automation to our manufacturing
+                  process
+                - >
+                  Worked closely with machine builders through conceptual
+                  design, reviews and validation
+              more:
+                - >
+                  Managed cornerstone manufacturing process
+                - >
+                  Maintained 6-sigma yield levels and 86\% OEE in the converting
+                  process
+            - date: 'August 1997 -- January 2002'
+              title: Senior Manufacturing Engineer
+              salary: '52,000'
+              supervisor: Felix Negron, Lourdes Gonzalez
+              bullets:
+                - >
+                  Improved process yield from 75\% to 85\% through 6-sigma
+                  projects
+                - >
+                  Integrated vision inspection systems on all manufacturing
+                  lines to ensure correct labeling
+              more:
+                - >
+                  Developed and executed validation protocols, IQ and OQ
+
+        - name: Baxter Biotech Group Fenwal Division
+          url: http://www.baxter.com
+          description:
+            >
+            Medical device manufacturer of products used in the delivery of
+            fluids/drugs and hemodialysis
+          jobs:
+            - date: 'September 1993 -- September 1997'
+              title: Project Engineer - Factory Automation
+              salary: '35,000'
+              director: Victor Ortiz
+              hr_director: Mario Lucena
+              plant_manager: Frank Cosmo
+              mde_manager: Ismael Segarra
+              engineering_manager_maricao: Peter Rosado
+              mechanical_engineer: Carlos Escarfulleri
+              draftsman: Gerry Torres-Martell
+              secretary: Joann Carrero
+              machine_shop:
+                  - name: Tito Rivera
+                  - name: Tomas Mercado
+                  - name: David
+              bullets:
+                - >
+                  Designed and built automated manufacturing equipment for the
+                  company's facilities worldwide
+                - >
+                  Supervised personnel and coordinated work in automation
+                  group's machine shop
+                - >
+                  Integrated radiation-based sterilization process
+
+projects-section:
+
+    heading: Other Technical Experience
+    projects:
+        - name: Web IDE
+          year: '2018'
+          description:
+            >
+            Web-based IDE for AI cognitive engine, deployed in Docker
+          languages: Python, Flask, Javascript, CSS, HTML
+        - name: Experimenter
+          year: '2015'
+          description:
+            >
+            Multi-threaded, GUI-based workflow tool
+          languages: \CPP, wxWidgets
+        - name: Automatic Grader
+          year: '2012'
+          description:
+            >
+            Coding assignment grading and reporting system
+          languages: Bash, \CPP
+        - name: Interactive 3D Visualization
+          year: '2011'
+          description:
+            >
+            GUI for viewing a clustering of cubed data
+          languages: \CPP, OpenGL
+        - name: Convoy Routing
+          year: '2007'
+          description:
+            >
+            Genetic algorithm for optimal scheduling of convoys on shared roads
+          languages: \CPP, Java
+#        - name: The Game of Life
+#          year: '2006'
+#          description:
+#            >
+#            Implementation of the board game for software engineering course
+#          languages: UML, Java
+
+education-section:
+
+    heading: Education
+    institutions:
+
+        - name: University of California, Riverside
+          url: http://www.ucr.edu
+          degree: Ph.D. in Computer Science
+          concentration: Machine Learning
+          date: 'December 2014'
+          gpa: 3.9
+          advisor: Christian R. Shelton
+          work:
+            type: Dissertation
+            description:
+                >
+                Automatic Co-clustering for Social Network and Medical Data
+
+        - name: California State University, Long Beach
+          url: https://www.csulb.edu
+          degree: M.S. in Computer Science
+          concentration: Artificial Intelligence
+          date: 'May 2008'
+          gpa: 3.9
+          advisor: Colleen van Lent
+          work:
+            type: Thesis
+            description:
+                >
+                Convoy Routing and scheduling using Augmented Beam Search, RSBS
+
+        - name: Marquette University, Milwaukee
+          url: http://marquette.edu
+          degree: B.S. in Electrical Engineering
+          concentration: Digital Electronics
+          date: 'August 1992'
+          gpa: 2.5
+          advisor: Frank Jacoby
+          work:
+            type: Senior Project
+            description:
+                >
+                Robotic arm to demonstrate cell manufacturing to future classes
+
+    high_school:
+        name: Colegio Espiritu Santo
+        address:
+            mailing: Box 191715
+            street: Urb. Floral Park, Calle Pachin Marin, Esq. Suiza
+            city: Hato Rey
+            state: PR
+            zip_code: 00919-1715
+        phone:
+            area_code: '787'
+            number: 722-1334
+        fax:
+            area_code: '787'
+            number: 754-7154
+        graduation_year: '1988'
+
+publications-section:
+
+    heading: Publications
+    publications:
+
+        - author:
+            >
+            Islam, Kazi T., Shelton, Christian R., Casse, Juan I. and
+            Wetzel, Randall
+          title: Marked Point Process for Severity of Illness Assessment
+          year: '2017'
+          link:
+            >
+            'http://www.mucmd.org/CameraReadySubmissions/54\%5CCameraReady\
+            Submission\%5Cmucmd_edited.pdf'
+          proceedings:
+            >
+            Proceedings of Machine Learning for Healthcare 2017.
+            JMLR W\&C Track Volume 68
+
+        - author: Casse, Juan Ignacio
+          title: Automatic Co-clustering for Social Network and Medical Data
+          year: '2014'
+          link: http://escholarship.org/uc/item/2p7667hz
+          proceedings:
+            >
+            Ph.D. Dissertation, University of California Riverside,
+            Riverside, CA
+
+        - author: Casse, J., Shelton, C., Hanneman, R.
+          title:
+            >
+            A new criterion function for exploratory blockmodeling for
+            structural and regular equivalence
+          year: '2013'
+          link:
+            >
+            http://www.sciencedirect.com/science/article/pii/S0378873312000676
+          proceedings: Social Networks, 35(1), 32–50
+
+        - author: Casse, J.I., Shelton, C.R., and Hanneman R.A.
+          title:
+            >
+            Alternating Optimization Algorithm for Block-modeling Two-way
+            Two-mode Data with Unknown Number of Clusters
+          year: '2011'
+          link:
+          proceedings: Regular Session on Social Networks for the 2011 ASA
+
+        - author: Goldstein, D., Shehab, T., Casse, J., and Lin, H.
+          title: On the formulation and solution of the convoy routing problem
+          year: '2010'
+          link:
+              >
+              http://www.sciencedirect.com/science/article/pii/S1366554509000398
+          proceedings:
+              >
+              Transportation Research Part E: Logistics and Transportation
+              Review, 46(4), 520
+
+        - author: Casse, J.I.
+          title: Convoy Routing and Scheduling using Augmented Beam Search RSBS
+          year: '2008'
+          link:
+              >
+              'http://books.google.com/books/about/Convoy_Routing_and\
+              _Scheduling_Using_Augm.html?id=q2KjZN1XB6wC'
+          proceedings:
+              >
+              Master’s thesis, California State University, Long Beach, CA
+
+miscellanous-section:
+
+    heading: Credentials
+    credentials:
+        - name: Professional Engineer (PE) License 14350, 1997, Puerto Rico
+          url: http://www.ciapr.net
+
+    heading: Presentations
+    presentations:
+        - name: Meaningful Use of Complex Medical Data (MUCMD) Symposium 2014,
+                Los Angeles, CA
+          url: http://mucmd.org
+        - name: 2nd Annual METRANS National Urban Freight Conference 2007,
+                Long Beach, CA
+          url: https://www.metrans.org
+
+    heading: Reviewer
+    reviews:
+        - name: IEEE Transactions on Knowledge and Data Engineering
+          url: https://www.computer.org/portal/web/tkde
+        - name: Transportation Research Part E Logistics and Transportation
+                Review
+          url: https://www.metrans.org
+
+    heading: Competitions
+    competitions:
+        - name: ACM Southern California Regional Programming Contest, 2005
+          url: http://socalcontest.org
+          members: Kevin Harness and Carla Hernandez
+          coach: Steven Gold and Paul Woo
+
+    heading: Awards
+    awards:
+        - institution: Hispanic College Fund
+          url: http://www.hispanicfund.org
+          awards:
+            - College and Career Institute Scholar, academic year 2011--2012
+            - Google-sponsored scholarship, academic year 2010--2011
+        - institution: University of California, Riverside
+          url: http://www.ucr.edu
+          awards:
+            - Dissertation Year Program Fellowship, fall 2012 and fall 2013
+            - Dean's Fellowship, academic year 2008--2009
+        - institution: California State University, Long Beach
+          url: http://www.csulb.edu
+          awards:
+            - Graduate Dean's List of University Scholars and Artists, 2008
+            - Graduate Research Fellowship, academic year 2007--2008
+        - institution: HEIG-VD
+          url: https://heig-vd.ch
+          awards:
+            - Grant to attend the International Summer University 2007
+              in Switzerland
+
+    heading: Languages
+    languages:
+        - Fluent in both written and oral Spanish and English
+
+    heading: Organizations
+    organizations:
+        - name: Tau Beta Pi, Engineering Honor Society
+          url: http://www.tbp.org
+        - name: Upsilon Pi Epsilon,  Computer Science Honor Society
+          url: http://upe.acm.org
+...
