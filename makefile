@@ -1,6 +1,6 @@
 TEX = pandoc
 SRCS = document.tex data.yaml
-FLAGS = --latex-engine=xelatex
+FLAGS = --pdf-engine=xelatex
 TARGET = resume.pdf
 
 UNAME_S := $(shell uname -s)

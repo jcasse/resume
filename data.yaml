@@ -70,9 +70,9 @@ contact:
     linkedin:
         text: linkedin.com/in/juan-casse
         url: https://www.linkedin.com/in/juan-casse
-    github:
-        text: github.com/jcasse
-        url: https://github.com/jcasse
+    gitlab:
+        text: gitlab.com/jcasse
+        url: https://gitlab.com/jcasse
     phone:
         area_code: '310'
         number: '913-7306'
@@ -390,8 +390,8 @@ projects-section:
           year: '2018'
           description:
             >
-            Web-based IDE for AI cognitive engine, deployed in Docker
-          languages: Python, Flask, Javascript, CSS, HTML
+            Web-based IDE, deployed in Docker
+          languages: Python, Flask, Apache Http Server, Ace, GoldenLayout
         - name: Experimenter
           year: '2015'
           description:
