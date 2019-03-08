@@ -30,7 +30,7 @@ contact:
           zip code: 90027
           county: Los Angeles
         - name: International Village
-          street: 1100 Everton Place 
+          street: 1100 Everton Place
           apt: '211'
           city: Riverside
           state: CA
@@ -89,11 +89,11 @@ summary-section:
         >
         My passion lies in software development and engineering.
         With a background in machine laearning and Artificial Intelligence,
-        my ideal job combines software development with AI algorithms.
+        my ideal job combines software development and AI algorithms.
         Years as a graduate student researcher gave
         me the tools to work independently while a previous engineering
         career in the field of medical device manufacturing gave me the
-        experience of working in cross-fucntional teams.
+        experience of working in large, cross-fucntional teams.
 
 skills-section:
 
@@ -104,13 +104,14 @@ skills-section:
             - C
             - C\texttt{++}
             - Python
+            - Go
             - Java
             - Objective-C
             - Bash
-            - R
-            - Matlab
-            - SQL
             - Lisp
+            - R
+            - SQL
+            - Matlab
             - \LaTeX
             - XML
             - JSON
@@ -119,9 +120,9 @@ skills-section:
           items:
             - Emacs
             - Vim
-            - R Studio
             - Android Studio
             - Xcode
+            - R Studio
             - Eclipse
             - Git
             - Gerrit
@@ -152,19 +153,19 @@ experience-sections:
     - heading: Experience in Industry
       companies:
 
-        - name: Trusted Autonomy, a Beyond Limits company
+        - name: Beyond Limits, Inc.
           url: http://www.beyond.ai
           description:
             >
             Leader in industrial-grade Artificial General Intelligence (AGI)
             software
           address: 400 N Brand Blvd, Glendale, CA 91203
-          ceo: AJ
+          ceo: AJ Abdallat
           cto: Mark L. James
           jobs:
             - date: 'October 2017 - present'
               title: AI Software Engineer
-              salary: '126,000'
+              salary: '130,000'
               bullets:
                 - >
                   Develop artificial intelligence software
