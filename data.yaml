@@ -87,13 +87,17 @@ summary-section:
     heading: Software Engineer
     content:
         >
-        My passion lies in software development and engineering.
-        With a background in machine laearning and Artificial Intelligence,
-        my ideal job combines software development and AI algorithms.
-        Years as a graduate student researcher gave
-        me the tools to work independently while a previous engineering
-        career in the field of medical device manufacturing gave me the
-        experience of working in large, cross-fucntional teams.
+        I am passionate about software development and writing clean,
+        maintainable code and, above all, ensuring the code is correct.
+        I am an advocate of test-driven development.
+        With an academic background in machine learning and artificial
+        intelligence, my ideal job consists of developing software for AI
+        applications.
+        Fortunate to have had a diverse experience in the industry:
+        architected, designed and implemented an automated testing and
+        reporting framework for mobile applications, implemented a fuzzy
+        inference engine as a Python package, developed a web service for an AI
+        engine, conducted data science work, and more.
 
 skills-section:
 
@@ -102,16 +106,16 @@ skills-section:
         - heading: Languages
           items:
             - C
-            - C\texttt{++}
             - Python
-            - Go
+            - C\texttt{++}
             - Java
-            - Objective-C
             - Bash
             - Lisp
             - R
             - SQL
+            - Objective-C
             - Matlab
+            - Go
             - \LaTeX
             - XML
             - JSON
@@ -132,17 +136,18 @@ skills-section:
         - heading: Platforms
           items:
             - Linux
+            - MacOS
             - Docker
             - Tomcat
             - SQL Server
             - Oracle
             - JDBC
-            - OpenGL
         - heading: Graphing
           items:
             - Gnuplot
             - Graphviz
             - Xfig
+            - OpenGL
             - AutoCAD
             - Bokeh
             - ggplot2
@@ -168,9 +173,7 @@ experience-sections:
               salary: '130,000'
               bullets:
                 - >
-                  Develop artificial intelligence software
-                - >
-                  Implement machine learning algorithms
+                  Develop software for artificial intelligence applications.
 
         - name: InAuth, Inc., an American Express company
           url: https://www.inauth.com
@@ -225,7 +228,7 @@ experience-sections:
                   algorithm.
                 - >
                   Implemented packages in R and Python for data cleaning and
-                  analysis
+                  analysis.
 
         - name: Google, Inc.
           url: https://www.google.com/intl/en/about
@@ -241,14 +244,15 @@ experience-sections:
               salary: '102,000'
               bullets:
                 - >
-                  Contributed to open source software, Flexible I/O Tester (fio)
+                  Contributed to open source software, Flexible I/O Tester
+                  (fio).
                 - >
                   Developed Linux utility in C to test data integrity and
-                  retention of storage devices
+                  retention of storage devices.
               more:
                 - >
                   Wrote storage qualification tests in Python to share with
-                  hardware vendors
+                  hardware vendors.
 
     - heading: Experience in Academia
       companies:
@@ -266,21 +270,22 @@ experience-sections:
               bullets:
                 - >
                   Implemented clustering algorithms (20K lines of \CPP code) in
-                  support of my research
+                  support of my research.
             - date: 'April 2012 -- June 2012'
               title: Associate Instructor
               bullets:
-                - 'Taught CS 14 Introduction to Data Structures and Algorithms'
+                - >
+                  Taught CS 14 Introduction to Data Structures and Algorithms.
             - date: 'September 2009 -- June 2013'
               title: Teaching Assistant
               bullets:
                 - >
                   Held laboratory sessions, graded assignments, and held office
-                  hours for various CS courses
+                  hours for various CS courses.
               more:
                 - >
                   Automated grading and reporting of coding homework using
-                  Python, Bash and C++ test harnesses
+                  Python, Bash and C++ test harnesses.
 
         - name: Harvey Mudd College
           url: https://www.hmc.edu
@@ -292,22 +297,23 @@ experience-sections:
               title: Instructor
               supervisor: Christine Alvarado
               bullets:
-                - 'Taught CS 151 Artificial Intelligence'
+                - >
+                  Taught CS 151 Artificial Intelligence.
 
     - heading: Previous Professional Experience
       summary:
           - Designed and built automated equipment for medical device
-            manufacturing (4 years)
-          - Scheduled project implementation in machine shop
-          - Certified Green Belt
+            manufacturing (4 years).
+          - Scheduled project implementation in machine shop.
+          - Certified Green Belt.
           - Implemented process improvement projects, incresing yield from 75\%
-            to 85\% and maintaining 6-sigma levels and 85\% OEE (7 years)
-          - Managed engineering interns woking on various projects
+            to 85\% and maintaining 6-sigma levels and 85\% OEE (7 years).
+          - Managed engineering interns woking on various projects.
           - Successfully proposed change in design and allocation of funds to
-            management of new technology manufacturing process
+            management of new technology manufacturing process.
           - Regularly presented project plans, progress, expenditures and
-            results to management
-          - Regularly collaborated with other teams and manufacturing plants
+            results to management.
+          - Regularly collaborated with other teams and manufacturing plants.
       companies:
 
         - name: Lifescan, a Johnson \& Johnson company
@@ -325,17 +331,17 @@ experience-sections:
               supervisor: Felipe Collazo, Carlos Rodriguez
               bullets:
                 - >
-                  Introduced new technology automation to our manufacturing
-                  process
+                  Introduced new-technology automation to our manufacturing
+                  process.
                 - >
                   Worked closely with machine builders through conceptual
-                  design, reviews and validation
+                  design, reviews and validation.
               more:
                 - >
-                  Managed cornerstone manufacturing process
+                  Managed cornerstone manufacturing process.
                 - >
                   Maintained 6-sigma yield levels and 86\% OEE in the converting
-                  process
+                  process.
             - date: 'August 1997 -- January 2002'
               title: Senior Manufacturing Engineer
               salary: '52,000'
@@ -343,13 +349,13 @@ experience-sections:
               bullets:
                 - >
                   Improved process yield from 75\% to 85\% through 6-sigma
-                  projects
+                  projects.
                 - >
                   Integrated vision inspection systems on all manufacturing
-                  lines to ensure correct labeling
+                  lines to ensure correct labeling.
               more:
                 - >
-                  Developed and executed validation protocols, IQ and OQ
+                  Developed and executed validation protocols, IQs and OQs.
 
         - name: Baxter Biotech Group Fenwal Division
           url: http://www.baxter.com
@@ -375,13 +381,13 @@ experience-sections:
                   - name: David
               bullets:
                 - >
-                  Designed and built automated manufacturing equipment for the
-                  company's facilities worldwide
+                  Designed and built automated manufacturing equipment for
+                  various facilities worldwide.
                 - >
                   Supervised personnel and coordinated work in automation
-                  group's machine shop
+                  group's machine shop.
                 - >
-                  Integrated radiation-based sterilization process
+                  Integrated radiation-based sterilization process.
 
 projects-section:
 
