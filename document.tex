@@ -23,22 +23,6 @@ $summary-section.content$
 \end{justify}
 $endif$
 
-$if(skills-section)$
-\sectionheader{$skills-section.heading$}
-\vspace{-13pt}
-\begin{description}[align=right,labelwidth=\skillswidth]
-\setlength\itemsep{-2pt}
-$for(skills-section.skills)$
-\item [$skills-section.skills.heading$:]
-\commasep{\ensuremath{\cdot}}
-$for(skills-section.skills.items)$
-$skills-section.skills.items$
-$endfor$
-\endcommasep
-$endfor$
-\end{description}
-$endif$
-
 $if(experience-sections)$
 $for(experience-sections)$
     \sectionheader{$experience-sections.heading$}
@@ -53,17 +37,37 @@ $for(experience-sections)$
             {$experience-sections.companies.jobs.title$}
             {$experience-sections.companies.jobs.date$}
             \begin{itemize}
-            \setlength\itemsep{-2pt}
+            \setlength\topsep{0pt}
+            \setlength\partopsep{0pt}
+            \setlength\itemsep{5pt}
+            \setlength\parsep{1pt}
+            \setlength\parskip{-5pt}
             $for(experience-sections.companies.jobs.bullets)$
                 \item $experience-sections.companies.jobs.bullets$
             $endfor$
             \end{itemize}
-            \vspace{-5pt}
+            \vspace{-15pt}
         $endfor$
-        \vspace{5pt}
+        \vspace{15pt}
     $endfor$
     \vspace{-1pt}
 $endfor$
+$endif$
+
+$if(skills-section)$
+\sectionheader{$skills-section.heading$}
+\vspace{-13pt}
+\begin{description}[align=right,labelwidth=\skillswidth]
+\setlength\itemsep{-2pt}
+$for(skills-section.skills)$
+    \item [$skills-section.skills.heading$:]
+    \commasep{\ensuremath{\cdot}}
+    $for(skills-section.skills.items)$
+        $skills-section.skills.items$
+    $endfor$
+    \endcommasep
+$endfor$
+\end{description}
 $endif$
 
 $if(projects-section)$

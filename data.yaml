@@ -193,6 +193,12 @@ experience-sections:
               bullets:
                 - >
                   Develop software for artificial intelligence applications.
+              more:
+                - >
+                  Lead team of four engineers in developing a Web-based IDE.
+                - >
+                  Wrote software that translated from English text to language
+                  of AI engine.
 
         - name: InAuth, Inc., an American Express company
           url: https://www.inauth.com
@@ -209,11 +215,11 @@ experience-sections:
           email: jcasse@inauth.com
           jobs:
             - date: 'July 2016 - October 2017'
-              title: SDET
+              title: Software Development Engineer in Test
               salary: '110,000'
               bullets:
                 - >
-                  Developed cross-platform, test automation framework for the
+                  Developed cross-platform test automation framework for the
                   company's mobile SDK products.
                   It runs on Linux and OS X, operates on Android and
                   iOS devices, is extensible and provides end-to-end automation,
@@ -249,7 +255,7 @@ experience-sections:
                   The number of clusters was automatically selected by the
                   algorithm.
                 - >
-                  Implemented packages in R and Python for data cleaning and
+                  Developed packages in R and Python for data cleaning and
                   analysis.
 
         - name: Google, Inc.
@@ -326,7 +332,7 @@ experience-sections:
                 - >
                   Taught CS 151 Artificial Intelligence.
 
-    - heading: Previous Professional Experience
+    - heading: Other Professional Experience
       summary:
           - Designed and built automated equipment for medical device
             manufacturing (4 years).
@@ -360,11 +366,11 @@ experience-sections:
               bullets:
                 - >
                   Introduced new-technology automation to our manufacturing
-                  process.
+                  processes.
+              more:
                 - >
                   Worked closely with machine builders through conceptual
                   design, reviews and validation.
-              more:
                 - >
                   Managed cornerstone manufacturing process.
                 - >
@@ -376,12 +382,12 @@ experience-sections:
               supervisor: Felix Negron, Lourdes Gonzalez
               bullets:
                 - >
-                  Improved process yield from 75\% to 85\% through 6-sigma
+                  Improved process yield through 6-sigma
                   projects.
+              more:
                 - >
                   Integrated vision inspection systems on all manufacturing
                   lines to ensure correct labeling.
-              more:
                 - >
                   Developed and executed validation protocols, IQs and OQs.
 
@@ -412,6 +418,7 @@ experience-sections:
                 - >
                   Designed and built automated manufacturing equipment for
                   various facilities worldwide.
+              more:
                 - >
                   Supervised personnel and coordinated work in automation
                   group's machine shop.
@@ -420,7 +427,7 @@ experience-sections:
 
 projects-section:
 
-    heading: Other Technical Experience
+    heading: Projects
     projects:
         - name: Web IDE
           year: '2018'
