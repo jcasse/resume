@@ -25,7 +25,7 @@ $endif$
 
 $if(skills-section)$
 \sectionheader{$skills-section.heading$}
-\vspace{-15pt}
+\vspace{-13pt}
 \begin{description}[align=right,labelwidth=\skillswidth]
 \setlength\itemsep{-2pt}
 $for(skills-section.skills)$
@@ -41,26 +41,28 @@ $endif$
 
 $if(experience-sections)$
 $for(experience-sections)$
-\sectionheader{$experience-sections.heading$}
-$for(experience-sections.companies)$
-\company
-{$experience-sections.companies.name$}
-{$experience-sections.companies.url$}
-{$experience-sections.companies.description$}
-$for(experience-sections.companies.jobs)$
-\jobtitle
-{$experience-sections.companies.jobs.title$}
-{$experience-sections.companies.jobs.date$}
-\begin{itemize}
-\setlength\itemsep{-2pt}
-$for(experience-sections.companies.jobs.bullets)$
-\item $experience-sections.companies.jobs.bullets$
-$endfor$
-\end{itemize}
-\vspace{-1pt}
-$endfor$
-$endfor$
-\vspace{-4pt}
+    \sectionheader{$experience-sections.heading$}
+    $for(experience-sections.companies)$
+        \company
+        {$experience-sections.companies.name$}
+        {$experience-sections.companies.url$}
+        {$experience-sections.companies.description$}
+        {$experience-sections.companies.city-state$}
+        $for(experience-sections.companies.jobs)$
+            \jobtitle
+            {$experience-sections.companies.jobs.title$}
+            {$experience-sections.companies.jobs.date$}
+            \begin{itemize}
+            \setlength\itemsep{-2pt}
+            $for(experience-sections.companies.jobs.bullets)$
+                \item $experience-sections.companies.jobs.bullets$
+            $endfor$
+            \end{itemize}
+            \vspace{-5pt}
+        $endfor$
+        \vspace{5pt}
+    $endfor$
+    \vspace{-1pt}
 $endfor$
 $endif$
 
@@ -83,17 +85,18 @@ $endif$
 $if(education-section)$
 \sectionheader{$education-section.heading$}
 $for(education-section.institutions)$
-\education
-{$education-section.institutions.degree$}
-{$education-section.institutions.gpa$}
-{\href{$education-section.institutions.url$}{$education-section.institutions.name$}}
-{$education-section.institutions.date$}
-\begin{itemize}
-\setlength\itemsep{0pt}
-\item
-$education-section.institutions.work.type$:
-$education-section.institutions.work.description$
-\end{itemize}
+    \education
+    {$education-section.institutions.degree$}
+    {$education-section.institutions.gpa$}
+    {$education-section.institutions.url$}
+    {$education-section.institutions.name$}
+    {$education-section.institutions.date$}
+    \begin{itemize}
+    \setlength\itemsep{0pt}
+    \item
+      $education-section.institutions.work.type$:
+      $education-section.institutions.work.description$
+    \end{itemize}
 $endfor$
 $endif$
 \vspace{-15pt}

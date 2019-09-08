@@ -12,7 +12,7 @@ rebuild:
 	gnome-open $(TARGET)
 endif
 ifeq ($(UNAME_S),Darwin)
-build: $(TARGET)
+rebuild:
 	open $(TARGET)
 endif
 

@@ -7,14 +7,21 @@ contact:
         last: Casse
         second: Echeandia
     address:
-        name: Sausalito - Villas at Playa Vista
-        street: '12411 W Fielding Cir'
-        apt: '5127'
-        city: Playa Vista
+        name: Altana Glendale
+        street: '633 N Central Avenue'
+        apt: '240'
+        city: Glendale
         state: CA
-        zip code: '90094'
+        zip code: '91203'
         county: Los Angeles
     address_history:
+        - name: Altana Glendale
+          street: '633 N Central Avenue'
+          apt: '240'
+          city: Glendale
+          state: CA
+          zip code: '91203'
+          county: Los Angeles
         - name: Sausalito - Villas at Playa Vista
           street: '12411 W Fielding Cir'
           apt: '5127'
@@ -77,6 +84,8 @@ contact:
         area_code: '310'
         number: '913-7306'
     phone_history:
+        - area_code: '310'
+          number: '913-7306'
         - area_code: '951'
           number: '312-5241'
         - area_code: '310'
@@ -87,13 +96,12 @@ summary-section:
     heading: Software Engineer
     content:
         >
-        I am passionate about software development and writing clean,
-        maintainable code and, above all, ensuring the code is correct.
-        I am an advocate of test-driven development.
+        A software developer at heart, I am passionate about writing extensible
+        and maintainable code.
         With an academic background in machine learning and artificial
         intelligence, my ideal job consists of developing software for AI
         applications.
-        Fortunate to have had a diverse experience in the industry:
+        Fortunate to have had a diverse experience in industry:
         architected, designed and implemented an automated testing and
         reporting framework for mobile applications, implemented a fuzzy
         inference engine as a Python package, developed a web service for an AI
@@ -105,21 +113,30 @@ skills-section:
     skills:
         - heading: Languages
           items:
-            - C
-            - Python
-            - C\texttt{++}
+            - Python (expert)
+            - C/C\texttt{++} (proficient)
             - Java
-            - Bash
             - Lisp
-            - R
-            - SQL
             - Objective-C
+            - R
+            - Bash
+            - SQL
             - Matlab
-            - Go
             - \LaTeX
-            - XML
-            - JSON
-            - YAML
+        - heading: Software
+          items:
+            - Emacs
+            - Vim
+            - Android Studio
+            - Xcode
+            - R Studio
+            - Git
+            - Gerrit
+            - Jira
+            - Linux
+            - MacOS
+            - Docker
+    more:
         - heading: Productivity
           items:
             - Emacs
@@ -162,9 +179,11 @@ experience-sections:
           url: http://www.beyond.ai
           description:
             >
-            Leader in industrial-grade Artificial General Intelligence (AGI)
-            software
-          address: 400 N Brand Blvd, Glendale, CA 91203
+            Leader in industrial-grade artificial intelligence (AI)
+            solutions
+          address: 400 N Brand Blvd
+          city-state: Glendale, CA
+          zip-code: 91203
           ceo: AJ Abdallat
           cto: Mark L. James
           jobs:
@@ -179,9 +198,10 @@ experience-sections:
           url: https://www.inauth.com
           description:
             >
-            Leader in mobile-first authentication and fraud prevention for
-            mobile applications and browsers
-          address: 227 Broadway Suite 200, Santa Monica, CA 90401
+            Leader in mobile-first authentication and fraud prevention
+          address: 227 Broadway Suite 200
+          city-state: Santa Monica, CA
+          zip-code: 90401
           president: Lisa Stanton
           cto_cofounder: Paul Marsolan
           engineering_director: Charles Crupper
@@ -206,7 +226,9 @@ experience-sections:
             >
             Award-winning, non-profit, research hospital providing
             life-saving care to children
-          address: 4650 Sunset Blvd, Los Angeles, CA 90027
+          address: 4650 Sunset Blvd
+          city-state: Los Angeles, CA
+          zip-code: 90027
           chair_anesthesiology_critical_care_medicine_accm: Randall Wetzel
           lead_data_scientist: Jon Williams
           email: jcasse@chla.ucs.edu
@@ -236,7 +258,9 @@ experience-sections:
             >
             Multinational, technology company specializing in Internet-related
             services and products
-          address: 1600 Amphitheatre Pkwy, Mountain View, CA 94043
+          address: 1600 Amphitheatre Pkwy
+          city-state: Mountain View, CA
+          zip-code: 94043
           host: Grant Grundler grundler@google.com
           jobs:
             - date: 'June 2013 -- September 2013'
@@ -261,8 +285,9 @@ experience-sections:
           url: http://www.ucr.edu
           description:
             >
-            Public research university part of the University of California
+            Public research university, part of the University of California
             system
+          city-state: Riverside, CA
           jobs:
             - date: 'June 2012 -- September 2014'
               title: Graduate Student Researcher
@@ -292,6 +317,7 @@ experience-sections:
           description:
             >
             Top-ranked college of science, engineering and mathematics
+          city-state: Claremont, CA
           jobs:
             - date: 'January 2011 -- May 2011'
               title: Instructor
@@ -314,6 +340,7 @@ experience-sections:
           - Regularly presented project plans, progress, expenditures and
             results to management.
           - Regularly collaborated with other teams and manufacturing plants.
+
       companies:
 
         - name: Lifescan, a Johnson \& Johnson company
@@ -322,6 +349,7 @@ experience-sections:
             >
             Manufacturer of blood glucose monitoring systems for home and
             hospital use
+          city-state: Cabo Rojo, PR
           plant_manager: Eduardo Baez, Lourdes Ruiz
           qa_manager: Gloria Colon, Edwin Santos
           jobs:
@@ -363,6 +391,7 @@ experience-sections:
             >
             Medical device manufacturer of products used in the delivery of
             fluids/drugs and hemodialysis
+          city-state: San German, PR
           jobs:
             - date: 'September 1993 -- September 1997'
               title: Project Engineer - Factory Automation
