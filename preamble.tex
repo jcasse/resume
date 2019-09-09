@@ -194,20 +194,21 @@
 
 \newcommand{\myitem}{% Modified `\item` to update counter and save nodes
   \stepcounter{mycnt}%
-  \item[\linkedlist{%
-    i\alph{mylist}\arabic{mycnt}}]%
-  \label{item-\alph{mylist}\arabic{mycnt}}%
-  \ifnum\value{mycnt}>1%
-    \ifnum\getpagerefnumber{item-\alph{mylist}\arabic{mytmp}}<\getpagerefnumber{item-\alph{mylist}\arabic{mycnt}}%
+  \item[\linkedlist{i\alph{mylist}\arabic{mycnt}}]%
+  \label{item - \alph{mylist}\arabic{mycnt}}%
+  \ifnum\value{mycnt} > 1%
+    \ifnum\getpagerefnumber{item - \alph{mylist}\arabic{mytmp}} < \getpagerefnumber{item - \alph{mylist}\arabic{mycnt}}%
+
       \begin{tikzpicture}[remember picture,overlay]%
-        \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) --
-          ++(0,3mm) --
-          (i\alph{mylist}\arabic{mycnt} |- current page text area.north);% draw short line
+        \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) -- ++ (0,3mm) -- (i\alph{mylist}\arabic{mycnt} |- current page text area.north);% draw short line
       \end{tikzpicture}%
+
     \else%
+
       \begin{tikzpicture}[remember picture,overlay]%
         \expandafter\draw\expandafter[\drawoptionsconn] (i\alph{mylist}\arabic{mytmp}) -- (i\alph{mylist}\arabic{mycnt});% draw the connecting lines
       \end{tikzpicture}%
+
     \fi%
   \fi%
   \addtocounter{mytmp}{2}%
