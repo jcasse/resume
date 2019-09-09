@@ -177,6 +177,67 @@
 %\usefont{OT1}{pcr}{m}{n}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bullets with vertical lines.
+% https://tex.stackexchange.com/questions/454744
+%     /bulleted-list-with-vertical-lines
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz,tikzpagenodes}
+\usetikzlibrary{calc}
+\usepackage{refcount}
+
+\newcounter{mylist} % new counter for amount of lists
+\newcounter{mycnt}[mylist] % create new item counter
+\newcounter{mytmp}[mylist] % tmp counter needed for checking before/after current item
+
+\newcommand{\drawoptionsconn}{gray, shorten <= .5mm, shorten >= .5mm, thick}
+\newcommand{\drawoptionsshort}{gray, shorten <= .5mm, shorten >= -1mm, thick}
+
+\newcommand{\myitem}{% Modified `\item` to update counter and save nodes
+  \stepcounter{mycnt}%
+  \item[\linkedlist{%
+    i\alph{mylist}\arabic{mycnt}}]%
+  \label{item-\alph{mylist}\arabic{mycnt}}%
+  \ifnum\value{mycnt}>1%
+    \ifnum\getpagerefnumber{item-\alph{mylist}\arabic{mytmp}}<\getpagerefnumber{item-\alph{mylist}\arabic{mycnt}}%
+      \begin{tikzpicture}[remember picture,overlay]%
+        \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) --
+          ++(0,3mm) --
+          (i\alph{mylist}\arabic{mycnt} |- current page text area.north);% draw short line
+      \end{tikzpicture}%
+    \else%
+      \begin{tikzpicture}[remember picture,overlay]%
+        \expandafter\draw\expandafter[\drawoptionsconn] (i\alph{mylist}\arabic{mytmp}) -- (i\alph{mylist}\arabic{mycnt});% draw the connecting lines
+      \end{tikzpicture}%
+    \fi%
+  \fi%
+  \addtocounter{mytmp}{2}%
+  \IfRefUndefinedExpandable{item-\alph{mylist}\arabic{mytmp}}{}{% defined
+    \ifnum\getpagerefnumber{item-\alph{mylist}\arabic{mytmp}}>\getpagerefnumber{item-\alph{mylist}\arabic{mycnt}}%
+      \begin{tikzpicture}[remember picture,overlay]%
+      \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) --
+        ++(0,-3mm) --
+        (i\alph{mylist}\arabic{mycnt} |- current page text area.south);% draw short line
+      \end{tikzpicture}%
+    \fi%
+  }%
+  \addtocounter{mytmp}{-1}%
+}
+
+\newcommand{\linkedlist}[1]{
+  \raisebox{0pt}[0pt][0pt]{\begin{tikzpicture}[remember picture]%
+  \node (#1) [gray,circle,fill,inner sep=1.5pt]{};
+  \end{tikzpicture}}%
+}
+
+\newenvironment{myitemize}{%
+% Create new `myitemize` environment to keep track of the counters
+  \stepcounter{mylist}% increment list counter
+  \begin{itemize}
+}{\end{itemize}%
+  }
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % define resume sections
 
 \newcommand{\dividerline}{
@@ -188,11 +249,11 @@
 \begin{flushleft}
 \definecolor{shadecolor}{rgb}{0.920, 0.920, 0.920}
 \begin{shaded*}
-\vspace{-2.5pt}
+%\vspace{-2.5pt}
 %\Large
 #1
 %\textbf{#1}
-\vspace{-2.5pt}
+%\vspace{-2.5pt}
 %\vspace{3.0pt}
 %{\color{headerbottomlinecolor}\hrule height 1.0pt \relax}
 %{\color{headerbottomlinecolor}\rule{\textwidth}{1.0pt}}
@@ -216,11 +277,11 @@
 
 \newcommand{\company}[4]{
 \begin{justify}
-\vspace{-5pt}  % space above company name
+%\vspace{-5pt}  % space above company name
 \href{#2}{\textbf{#1}} \\
 #3\hfill #4
 \dividerline
-\vspace{-5pt}  % space below company info
+%\vspace{-5pt}  % space below company info
 \end{justify}
 }
 
@@ -233,15 +294,15 @@
 \emph{#1}\hfill\emph{#2}
 %\textbf{#1}\dotrule{1pt}\textbf{#2}
 \end{justify}
-\vspace{-10pt}  % space below job title
+%\vspace{-10pt}  % space below job title
 }
 
 \newcommand{\education}[5]{
 \begin{justify}
-\vspace{-5pt}
+%\vspace{-5pt}
 %\textcolor{educationcolor}{#1}
     \textbf{#1} (GPA #2) \href{#3}{#4} \hfill #5
-\vspace{-10pt}
+%\vspace{-10pt}
 \end{justify}
 }
 

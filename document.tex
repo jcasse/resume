@@ -32,25 +32,32 @@ $for(experience-sections)$
         {$experience-sections.companies.url$}
         {$experience-sections.companies.description$}
         {$experience-sections.companies.city-state$}
-        $for(experience-sections.companies.jobs)$
-            \jobtitle
-            {$experience-sections.companies.jobs.title$}
-            {$experience-sections.companies.jobs.date$}
-            \begin{itemize}
-            \setlength\topsep{0pt}
-            \setlength\partopsep{0pt}
-            \setlength\itemsep{5pt}
-            \setlength\parsep{1pt}
-            \setlength\parskip{-5pt}
-            $for(experience-sections.companies.jobs.bullets)$
-                \item $experience-sections.companies.jobs.bullets$
+        % http://mirrors.ibiblio.org/CTAN/macros/latex/contrib/enumitem
+        %     /enumitem.pdf
+        %\rule[-32\baselineskip]{2pt}{32\baselineskip}
+        \begin{myitemize}[leftmargin=\parindent,align=left,labelwidth=\parindent,labelsep=0pt]
+            %\setlength\leftmargin{-10pt}
+            %\setlength\labelwidth{10pt}
+            $for(experience-sections.companies.jobs)$
+                \myitem \jobtitle
+                {$experience-sections.companies.jobs.title$}
+                {$experience-sections.companies.jobs.date$}
+                \begin{itemize}
+                  %\setlength\topsep{5pt}
+                  %\setlength\partopsep{0pt}
+                  %\setlength\itemsep{5pt}
+                  %\setlength\parsep{1pt}
+                  %\setlength\parskip{0pt}
+                  $for(experience-sections.companies.jobs.bullets)$
+                      \item $experience-sections.companies.jobs.bullets$
+                  $endfor$
+                \end{itemize}
+                %\vspace{-15pt}
             $endfor$
-            \end{itemize}
-            \vspace{-15pt}
-        $endfor$
-        \vspace{15pt}
+        \end{myitemize}
+        %\vspace{15pt}
     $endfor$
-    \vspace{-1pt}
+    %\vspace{-1pt}
 $endfor$
 $endif$
 
