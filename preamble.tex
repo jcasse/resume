@@ -212,12 +212,10 @@
     \fi%
   \fi%
   \addtocounter{mytmp}{2}%
-  \IfRefUndefinedExpandable{item-\alph{mylist}\arabic{mytmp}}{}{% defined
-    \ifnum\getpagerefnumber{item-\alph{mylist}\arabic{mytmp}}>\getpagerefnumber{item-\alph{mylist}\arabic{mycnt}}%
+  \IfRefUndefinedExpandable{item - \alph{mylist}\arabic{mytmp}}{}{% defined
+    \ifnum\getpagerefnumber{item - \alph{mylist}\arabic{mytmp}} > \getpagerefnumber{item - \alph{mylist}\arabic{mycnt}}%
       \begin{tikzpicture}[remember picture,overlay]%
-      \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) --
-        ++(0,-3mm) --
-        (i\alph{mylist}\arabic{mycnt} |- current page text area.south);% draw short line
+      \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) -- ++ (0,-3mm) -- (i\alph{mylist}\arabic{mycnt} |- current page text area.south);% draw short line
       \end{tikzpicture}%
     \fi%
   }%
@@ -230,12 +228,11 @@
   \end{tikzpicture}}%
 }
 
-\newenvironment{myitemize}{%
-% Create new `myitemize` environment to keep track of the counters
+\newenvironment{myitemize}
+{% Create new `myitemize` environment to keep track of the counters
   \stepcounter{mylist}% increment list counter
-  \begin{itemize}
-}{\end{itemize}%
-  }
+  \begin{itemize}}
+  {\end{itemize}}
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
