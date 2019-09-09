@@ -42,12 +42,12 @@ $for(experience-sections)$
                 \myitem \jobtitle
                 {$experience-sections.companies.jobs.title$}
                 {$experience-sections.companies.jobs.date$}
-                \begin{itemize}
-                  %\setlength\topsep{5pt}
-                  %\setlength\partopsep{0pt}
-                  %\setlength\itemsep{5pt}
-                  %\setlength\parsep{1pt}
-                  %\setlength\parskip{0pt}
+                \begin{itemize}[nosep, leftmargin=\parindent,align=left,labelwidth=\parindent,labelsep=0pt]
+                  \setlength\topsep{0pt}
+                  \setlength\partopsep{0pt}
+                  \setlength\itemsep{0pt}
+                  \setlength\parsep{0pt}
+                  \setlength\parskip{0pt}
                   $for(experience-sections.companies.jobs.bullets)$
                       \item $experience-sections.companies.jobs.bullets$
                   $endfor$
