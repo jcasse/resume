@@ -3,7 +3,7 @@
 \newcommand{\headerinfo}{
     \textbf{\Large $contact.name.first$ $contact.name.last$} \hfill
     $contact.address.county$, $contact.address.state$ \hfill
-    ($contact.phone.area_code$) $contact.phone.number$ \hfill
+    ($contact.phone.area-code$) $contact.phone.number$ \hfill
     \href{$contact.email.link$}{$contact.email.address$} \hfill
     \href{$contact.linkedin.url$}{$contact.linkedin.text$} \hfill
     \href{$contact.gitlab.url$}{$contact.gitlab.text$}
@@ -52,10 +52,10 @@ $for(experience-sections)$
                       \item $experience-sections.companies.jobs.bullets$
                   $endfor$
                 \end{itemize}
-                %\vspace{-15pt}
+                \vspace{-15pt}
             $endfor$
         \end{myitemize}
-        %\vspace{15pt}
+        \vspace{15pt}
     $endfor$
     %\vspace{-1pt}
 $endfor$

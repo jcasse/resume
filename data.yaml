@@ -81,14 +81,14 @@ contact:
         text: gitlab.com/jcasse
         url: https://gitlab.com/jcasse
     phone:
-        area_code: '310'
+        area-code: '310'
         number: '913-7306'
     phone_history:
-        - area_code: '310'
+        - area-code: '310'
           number: '913-7306'
-        - area_code: '951'
+        - area-code: '951'
           number: '312-5241'
-        - area_code: '310'
+        - area-code: '310'
           number: '622-3353'
 
 summary-section:
@@ -519,10 +519,10 @@ education-section:
             state: PR
             zip_code: 00919-1715
         phone:
-            area_code: '787'
+            area-code: '787'
             number: 722-1334
         fax:
-            area_code: '787'
+            area-code: '787'
             number: 754-7154
         graduation_year: '1988'
 
