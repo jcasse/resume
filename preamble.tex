@@ -177,6 +177,20 @@
 %\usefont{OT1}{pcr}{m}{n}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bullets raised.
+% https://tex.stackexchange.com/questions/119319
+%     /how-to-correctly-shrink-the-bullets-of-itemize
+%\newlength{\mylen}
+% The following two lines are used to compute the difference between normal
+% size bullet and a tiny bullet to use as the height difference to raise.
+%\setbox1=\hbox{$\bullet$}\setbox2=\hbox{\tiny$\bullet$}
+%\setlength{\mylen}{\dimexpr0.5\ht1-0.5\ht2}
+%\renewcommand\labelitemi{\raisebox{\mylen}{$\bullet$}}
+\newlength{\mybulletheight}
+\setlength{\mybulletheight}{1pt}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bullets with vertical lines.
 % https://tex.stackexchange.com/questions/454744
 %     /bulleted-list-with-vertical-lines
@@ -223,7 +237,7 @@
 }
 
 \newcommand{\linkedlist}[1]{
-  \raisebox{0pt}[0pt][0pt]{\begin{tikzpicture}[remember picture]%
+  \raisebox{\mybulletheight}[0pt][0pt]{\begin{tikzpicture}[remember picture]%
   \node (#1) [gray,circle,fill,inner sep=1.5pt]{};
   \end{tikzpicture}}%
 }
