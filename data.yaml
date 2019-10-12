@@ -29,14 +29,21 @@ contact:
           state: CA
           zip code: '90094'
           county: Los Angeles
-        - name: Bannockburn
+        - name: Eaves Los Feliz
           street: 3100 Riverside Dr
           apt: '462'
           city: Los Angeles
           state: CA
           zip code: 90027
           county: Los Angeles
-        - name: International Village
+        - name: Bannockburn, UCR
+          street: 3637 Canyon Crest Drive
+          apt: 'forgot'
+          city: Riverside
+          state: CA
+          zip code: 92507
+          county: Riverside
+        - name: International Village, UCR
           street: 1100 Everton Place
           apt: '211'
           city: Riverside
@@ -45,7 +52,7 @@ contact:
           county: Los Angeles
         - name: Park Ocean Condominium
           street: 5585 Coast Hwy,
-          apt: ''
+          apt: 'forgot'
           city: Long Beach
           state: CA
           zip code: 90804
@@ -70,7 +77,28 @@ contact:
           city: Cabo Rojo
           state: PR
           zip code: 00623
-          county: Cabo Rojo
+          county: na
+        - name: House in Sea Beach Colony
+          street: Canal Avenue
+          apt: na
+          city: Rincon
+          state: PR
+          zip code: 00677
+          county: na
+        - name: Stella
+          street: Calle Ocheatana
+          apt: 'forgot'
+          city: Rincon
+          state: PR
+          zip code: 00677
+          county: na
+        - name: Cond. El Ferrol
+          street: Ave. Roosevelt
+          apt: 704
+          city: Hato Rey
+          state: PR
+          zip code: 00917
+          county: na
     email:
         address: jcasse@gmail.com
         link: mailto:jcasse@gmail.com
