@@ -86,7 +86,7 @@ contact:
           zip code: 00677
           county: na
         - name: Stella
-          street: Calle Ocheatana
+          street: P.O. Box 1207
           apt: 'forgot'
           city: Rincon
           state: PR
@@ -225,8 +225,10 @@ experience-sections:
                 - >
                   Lead team of four engineers in developing a Web-based IDE.
                 - >
-                  Wrote software that translated from English text to language
-                  of AI engine.
+                  Wrote template-based NLP to translated from English text to
+                  language of AI engine.
+                - >
+                  Implemented fuzzy inference engine.
 
         - name: InAuth, Inc., an American Express company
           url: https://www.inauth.com
