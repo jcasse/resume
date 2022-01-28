@@ -17,10 +17,28 @@ LaTeX file to produce the PDF.
 
 1. LaTeX with the following extra packages: `fontspec` `geometry` `multicol`
 `xunicode` `xltxtra` `marginnote` `sectsty` `ulem` `hyperref` `polyglossia`
-2. [MacTeX](http://www.tug.org/mactex) in OS X
+
+```bash
+sudo apt install texlive-latex-extra
+sudo apt install texlive-xetex
+```
+
+[MacTeX](http://www.tug.org/mactex) in OS X
+
 3. [Lato 2.0](http://www.latofonts.com/lato-free-fonts) TT fonts
+
 4. [Pandoc](http://pandoc.org/), the universal document converter
-5. gnome-open for viewing the PDF in Linux
+
+```bash
+sudo apt-get install pandoc
+```
+
+5. xdg-open for viewing the PDF in Linux
+
+```bash
+sudo apt-get install xdg-utils
+```
+
 
 # Usage
 

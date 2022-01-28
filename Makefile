@@ -9,7 +9,7 @@ UNAME_S := $(shell uname -s)
 
 ifeq ($(UNAME_S),Linux)
 rebuild:
-	gnome-open $(TARGET)
+	xdg-open $(TARGET)
 endif
 ifeq ($(UNAME_S),Darwin)
 rebuild:

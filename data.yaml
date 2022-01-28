@@ -130,10 +130,12 @@ summary-section:
         intelligence, my ideal job consists of developing software for AI
         applications.
         Fortunate to have had a diverse experience in industry:
-        architected, designed and implemented an automated testing and
+        designed and implemented an automated testing and
         reporting framework for mobile applications, implemented a fuzzy
         inference engine as a Python package, developed a web service for an AI
-        engine, conducted data science work, and more.
+        engine and APIs for data pipelines using mlflow and metaflow,
+        conducted data science work, and designed and implemented controls for
+        manufacturing automated equipment.
 
 skills-section:
 
@@ -144,13 +146,13 @@ skills-section:
             - Python (expert)
             - C/C\texttt{++} (proficient)
             - Java
+            - Bash
+            - JavaScript
             - Lisp
             - Objective-C
             - R
-            - Bash
             - SQL
             - Matlab
-            - \LaTeX
         - heading: Software
           items:
             - Emacs
@@ -159,11 +161,10 @@ skills-section:
             - Xcode
             - R Studio
             - Git
-            - Gerrit
-            - Jira
             - Linux
-            - MacOS
+            - macOS
             - Docker
+            - Kubernetes
     more:
         - heading: Productivity
           items:
@@ -197,6 +198,9 @@ skills-section:
             - Bokeh
             - ggplot2
             - wxWidgets
+        - heading: Authoring
+          items:
+            - \LaTeX
 
 experience-sections:
 
@@ -217,7 +221,7 @@ experience-sections:
           jobs:
             - date: 'October 2017 - present'
               title: AI Software Engineer
-              salary: '130,000'
+              salary: '165,000'
               bullets:
                 - >
                   Develop software for artificial intelligence applications.
@@ -330,8 +334,8 @@ experience-sections:
               supervisor: Christian Shelton
               bullets:
                 - >
-                  Implemented clustering algorithms (20K lines of \CPP code) in
-                  support of my research.
+                  Implemented clustering algorithms (20K lines of \CPP code) as
+                  part of my research work.
             - date: 'April 2012 -- June 2012'
               title: Associate Instructor
               bullets:
