@@ -135,7 +135,7 @@ summary-section:
         inference engine as a Python package, developed a web service for an AI
         engine and APIs for data pipelines using mlflow and metaflow,
         conducted data science work, and designed and implemented controls for
-        manufacturing automated equipment.
+        manufacturing automated equipment and machine vision.
 
 skills-section:
 
@@ -450,8 +450,8 @@ experience-sections:
                   - name: David
               bullets:
                 - >
-                  Designed and built automated manufacturing equipment for
-                  various facilities worldwide.
+                  Designed and implemented controls for automated manufacturing
+                  equipment for various facilities worldwide.
               more:
                 - >
                   Supervised personnel and coordinated work in automation
