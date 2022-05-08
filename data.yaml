@@ -8,97 +8,109 @@ contact:
         second: Echeandia
     address:
         name: Altana Glendale
-        street: '633 N Central Avenue'
-        apt: '240'
+        street: 633 N Central Avenue
+        apt: 240
         city: Glendale
         state: CA
-        zip code: '91203'
+        zip code: 91203
         county: Los Angeles
     address_history:
         - name: Altana Glendale
-          street: '633 N Central Avenue'
-          apt: '240'
+          street: 633 N Central Avenue
+          apt: 240
           city: Glendale
           state: CA
-          zip code: '91203'
+          zip code: 91203
           county: Los Angeles
         - name: Sausalito - Villas at Playa Vista
-          street: '12411 W Fielding Cir'
-          apt: '5127'
+          street: 12411 W Fielding Cir
+          apt: 5127
           city: Playa Vista
           state: CA
-          zip code: '90094'
+          zip code: 90094
           county: Los Angeles
         - name: Eaves Los Feliz
           street: 3100 Riverside Dr
-          apt: '462'
+          apt: 462
           city: Los Angeles
           state: CA
           zip code: 90027
           county: Los Angeles
+          phone: 951-312-5241
+        - name: Cond. Pelican Reef
+          street: 950 Bastia Street
+          apt: 304
+          city: Rincon
+          state: PR
+          zip code: 00677
         - name: Bannockburn, UCR
           street: 3637 Canyon Crest Drive
-          apt: 'forgot'
+          apt: forgot
           city: Riverside
           state: CA
           zip code: 92507
           county: Riverside
         - name: International Village, UCR
           street: 1100 Everton Place
-          apt: '211'
+          apt: 211,256
           city: Riverside
           state: CA
           zip code: 92507
           county: Los Angeles
-        - name: Park Ocean Condominium
-          street: 5585 Coast Hwy,
-          apt: 'forgot'
+          phone: 951-826-2723
+        - name: PO Box
+          po box: 15662
+          city: Long Beach
+          zip code: 90815-0662
+          county: Los Angeles
+          phone: 310-622-3353
+        - name: Park Ocean
+          street: 5585 E PCH
+          apt: 148
           city: Long Beach
           state: CA
           zip code: 90804
           county: Los Angeles
+          phone: 310-622-3353
         - name: House
           street: 8341 Atlanta Ave
-          apt: na
           city: Huntington Beach
           state: CA
           zip code: 92646
           county: Orange County
+          phone: 310-622-3353
         - name: Villa Azure
-          street: 5700 W Centinela Ave
-          apt: ''
+          street: 5750 W Centinela Ave
+          apt: 314
           city: Los Angeles
           state: CA
           zip code: 90045
           county: Los Angeles
+          phone: 310-622-3353
         - name: Quintas de Cabo Rojo
           street: 136 Calle Picaflor
-          apt: na
           city: Cabo Rojo
           state: PR
-          zip code: 00623
-          county: na
+          zip code: 00623-4206
+          phone: 787-605-5992
         - name: House in Sea Beach Colony
           street: Canal Avenue
-          apt: na
           city: Rincon
           state: PR
           zip code: 00677
-          county: na
         - name: Stella
           street: P.O. Box 1207
           apt: 'forgot'
           city: Rincon
           state: PR
           zip code: 00677
-          county: na
         - name: Cond. El Ferrol
           street: Ave. Roosevelt
           apt: 704
           city: Hato Rey
           state: PR
           zip code: 00917
-          county: na
+          phone: 787-753-0571
     email:
         address: jcasse@gmail.com
         link: mailto:jcasse@gmail.com
@@ -111,6 +123,9 @@ contact:
     phone:
         area-code: '310'
         number: '913-7306'
+    Google Phone:
+        area-code: 415
+        number: 787-3542
     phone_history:
         - area-code: '310'
           number: '913-7306'
