@@ -86,8 +86,12 @@ $for(projects-section.projects)$
 \item
 [$projects-section.projects.name$]
 ($projects-section.projects.year$)
-$projects-section.projects.description$.
-$projects-section.projects.languages$
+$projects-section.projects.description$
+\hfill \commasep{\ensuremath{\cdot}}
+    $for(projects-section.projects.languages)$
+       $projects-section.projects.languages$
+    $endfor$
+    \endcommasep
 $endfor$
 \end{description}
 \vspace{-10pt}

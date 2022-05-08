@@ -14,6 +14,21 @@ contact:
         state: CA
         zip code: 91203
         county: Los Angeles
+    email:
+        address: jcasse@gmail.com
+        link: mailto:jcasse@gmail.com
+    linkedin:
+        text: linkedin.com/in/juan-casse
+        url: https://www.linkedin.com/in/juan-casse
+    gitlab:
+        text: gitlab.com/jcasse
+        url: https://gitlab.com/jcasse
+    phone:
+        area-code: 310
+        number: 913-7306
+    Google Phone:
+        area-code: 415
+        number: 787-3542
     address_history:
         - name: Altana Glendale
           street: 633 N Central Avenue
@@ -100,7 +115,7 @@ contact:
           zip code: 00677
         - name: Stella
           street: P.O. Box 1207
-          apt: 'forgot'
+          apt: forgot
           city: Rincon
           state: PR
           zip code: 00677
@@ -111,28 +126,13 @@ contact:
           state: PR
           zip code: 00917
           phone: 787-753-0571
-    email:
-        address: jcasse@gmail.com
-        link: mailto:jcasse@gmail.com
-    linkedin:
-        text: linkedin.com/in/juan-casse
-        url: https://www.linkedin.com/in/juan-casse
-    gitlab:
-        text: gitlab.com/jcasse
-        url: https://gitlab.com/jcasse
-    phone:
-        area-code: '310'
-        number: '913-7306'
-    Google Phone:
-        area-code: 415
-        number: 787-3542
     phone_history:
-        - area-code: '310'
-          number: '913-7306'
-        - area-code: '951'
-          number: '312-5241'
-        - area-code: '310'
-          number: '622-3353'
+        - area-code: 310
+          number: 913-7306
+        - area-code: 951
+          number: 312-5241
+        - area-code: 310
+          number: 622-3353
 
 summary-section:
 
@@ -156,10 +156,10 @@ skills-section:
 
     heading: Technical Tools
     skills:
-        - heading: Languages
+        - heading: Language
           items:
             - Python (expert)
-            - C/C\texttt{++} (proficient)
+            - C/\CPP (proficient)
             - Java
             - Bash
             - JavaScript
@@ -176,10 +176,12 @@ skills-section:
             - Xcode
             - R Studio
             - Git
-            - Linux
-            - macOS
             - Docker
             - Kubernetes
+        - heading: OS
+          items:
+            - Linux
+            - macOS
     more:
         - heading: Productivity
           items:
@@ -197,7 +199,7 @@ skills-section:
         - heading: Platforms
           items:
             - Linux
-            - MacOS
+            - macOS
             - Docker
             - Tomcat
             - SQL Server
@@ -226,26 +228,32 @@ experience-sections:
           url: http://www.beyond.ai
           description:
             >
-            Leader in industrial-grade artificial intelligence (AI)
-            solutions
+            Leader in industrial-grade artificial intelligence solutions
           address: 400 N Brand Blvd
           city-state: Glendale, CA
           zip-code: 91203
           ceo: AJ Abdallat
           cto: Mark L. James
           jobs:
-            - date: 'October 2017 - present'
-              title: AI Software Engineer
-              salary: '165,000'
+            - date: January 2020 - present
+              title: Artificial Intelligence Engineer
               bullets:
                 - >
-                  Develop software for artificial intelligence applications.
+                  Develop software in the area of knowledge representation and reasoning.
               more:
-                - >
-                  Lead team of four engineers in developing a Web-based IDE.
                 - >
                   Wrote template-based NLP to translated from English text to
                   language of AI engine.
+                - >
+                  Implemented fuzzy inference engine.
+            - date: October 2017 - January 2020
+              title: AI Software Engineer
+              bullets:
+                - >
+                  Developed software for artificial intelligence applications.
+              more:
+                - >
+                  Lead team of four engineers in developing a Web-based IDE.
                 - >
                   Implemented fuzzy inference engine.
 
@@ -263,9 +271,8 @@ experience-sections:
           qa_lead: Les Honnibal
           email: jcasse@inauth.com
           jobs:
-            - date: 'July 2016 - October 2017'
+            - date: July 2016 - October 2017
               title: Software Development Engineer in Test
-              salary: '110,000'
               bullets:
                 - >
                   Developed cross-platform test automation framework for the
@@ -288,9 +295,8 @@ experience-sections:
           lead_data_scientist: Jon Williams
           email: jcasse@chla.ucs.edu
           jobs:
-            - date: 'December 2014 – July 2016'
+            - date: December 2014 – July 2016
               title: Data Scientist
-              salary: '100,000'
               bullets:
                 - >
                   Developed algorithm to diagnose patients. It transformed each
@@ -318,9 +324,8 @@ experience-sections:
           zip-code: 94043
           host: Grant Grundler grundler@google.com
           jobs:
-            - date: 'June 2013 -- September 2013'
+            - date: June 2013 -- September 2013
               title: Software Engineering Intern
-              salary: '102,000'
               bullets:
                 - >
                   Contributed to open source software, Flexible I/O Tester
@@ -344,19 +349,19 @@ experience-sections:
             system
           city-state: Riverside, CA
           jobs:
-            - date: 'June 2012 -- September 2014'
+            - date: June 2012 -- September 2014
               title: Graduate Student Researcher
               supervisor: Christian Shelton
               bullets:
                 - >
                   Implemented clustering algorithms (20K lines of \CPP code) as
                   part of my research work.
-            - date: 'April 2012 -- June 2012'
+            - date: April 2012 -- June 2012
               title: Associate Instructor
               bullets:
                 - >
                   Taught CS 14 Introduction to Data Structures and Algorithms.
-            - date: 'September 2009 -- June 2013'
+            - date: September 2009 -- June 2013
               title: Teaching Assistant
               bullets:
                 - >
@@ -365,7 +370,7 @@ experience-sections:
               more:
                 - >
                   Automated grading and reporting of coding homework using
-                  Python, Bash and C++ test harnesses.
+                  Python, Bash and \CPP test harnesses.
 
         - name: Harvey Mudd College
           url: https://www.hmc.edu
@@ -374,7 +379,7 @@ experience-sections:
             Top-ranked college of science, engineering and mathematics
           city-state: Claremont, CA
           jobs:
-            - date: 'January 2011 -- May 2011'
+            - date: January 2011 -- May 2011
               title: Instructor
               supervisor: Christine Alvarado
               bullets:
@@ -408,9 +413,8 @@ experience-sections:
           plant_manager: Eduardo Baez, Lourdes Ruiz
           qa_manager: Gloria Colon, Edwin Santos
           jobs:
-            - date: 'January 2002 -- December 2004'
+            - date: January 2002 -- December 2004
               title: Staff Engineer
-              salary: '75,000'
               supervisor: Felipe Collazo, Carlos Rodriguez
               bullets:
                 - >
@@ -425,9 +429,8 @@ experience-sections:
                 - >
                   Maintained 6-sigma yield levels and 86\% OEE in the converting
                   process.
-            - date: 'August 1997 -- January 2002'
+            - date: August 1997 -- January 2002
               title: Senior Manufacturing Engineer
-              salary: '52,000'
               supervisor: Felix Negron, Lourdes Gonzalez
               bullets:
                 - >
@@ -448,9 +451,8 @@ experience-sections:
             fluids/drugs and hemodialysis
           city-state: San German, PR
           jobs:
-            - date: 'September 1993 -- September 1997'
+            - date: September 1993 -- September 1997
               title: Project Engineer (Factory Automation)
-              salary: '35,000'
               director: Victor Ortiz
               hr_director: Mario Lucena
               plant_manager: Frank Cosmo
@@ -479,37 +481,48 @@ projects-section:
     heading: Projects
     projects:
         - name: Web IDE
-          year: '2018'
+          year: 2018
           description:
             >
             Web-based IDE, deployed in Docker
-          languages: Python, Flask, Apache Http Server, Ace, GoldenLayout
-        - name: Experimenter
-          year: '2015'
+          languages:
+            - Python
+            - Flask
+            - Apache Http Server
+        - name: Xperimenter
+          year: 2015
           description:
             >
             Multi-threaded, GUI-based workflow tool
-          languages: \CPP, wxWidgets
+          languages:
+            - \CPP
+            - wxWidgets
         - name: Automatic Grader
-          year: '2012'
+          year: 2012
           description:
             >
             Coding assignment grading and reporting system
-          languages: Bash, \CPP
+          languages:
+            - Bash
+            - \CPP
         - name: Interactive 3D Visualization
-          year: '2011'
+          year: 2011
           description:
             >
             GUI for viewing a clustering of cubed data
-          languages: \CPP, OpenGL
+          languages:
+            - \CPP
+            - OpenGL
         - name: Convoy Routing
-          year: '2007'
+          year: 2007
           description:
             >
             Genetic algorithm for optimal scheduling of convoys on shared roads
-          languages: \CPP, Java
+          languages:
+            - \CPP
+            - Java
 #        - name: The Game of Life
-#          year: '2006'
+#          year: 2006
 #          description:
 #            >
 #            Implementation of the board game for software engineering course
@@ -524,7 +537,7 @@ education-section:
           url: http://www.ucr.edu
           degree: Ph.D. in Computer Science
           concentration: Machine Learning
-          date: 'December 2014'
+          date: December 2014
           gpa: 3.9
           advisor: Christian R. Shelton
           work:
@@ -537,7 +550,7 @@ education-section:
           url: https://www.csulb.edu
           degree: M.S. in Computer Science
           concentration: Artificial Intelligence
-          date: 'May 2008'
+          date: May 2008
           gpa: 3.9
           advisor: Colleen van Lent
           work:
@@ -550,7 +563,7 @@ education-section:
           url: http://marquette.edu
           degree: B.S. in Electrical Engineering
           concentration: Digital Electronics
-          date: 'August 1992'
+          date: August 1992
           gpa: 2.5
           advisor: Frank Jacoby
           work:
@@ -568,12 +581,12 @@ education-section:
             state: PR
             zip_code: 00919-1715
         phone:
-            area-code: '787'
+            area-code: 787
             number: 722-1334
         fax:
-            area-code: '787'
+            area-code: 787
             number: 754-7154
-        graduation_year: '1988'
+        graduation_year: 1988
 
 publications-section:
 
@@ -585,11 +598,11 @@ publications-section:
             Islam, Kazi T., Shelton, Christian R., Casse, Juan I. and
             Wetzel, Randall
           title: Marked Point Process for Severity of Illness Assessment
-          year: '2017'
+          year: 2017
           link:
             >
-            'http://www.mucmd.org/CameraReadySubmissions/54\%5CCameraReady\
-            Submission\%5Cmucmd_edited.pdf'
+            http://www.mucmd.org/CameraReadySubmissions/54\%5CCameraReady\
+            Submission\%5Cmucmd_edited.pdf
           proceedings:
             >
             Proceedings of Machine Learning for Healthcare 2017.
@@ -597,7 +610,7 @@ publications-section:
 
         - author: Casse, Juan Ignacio
           title: Automatic Co-clustering for Social Network and Medical Data
-          year: '2014'
+          year: 2014
           link: http://escholarship.org/uc/item/2p7667hz
           proceedings:
             >
@@ -609,7 +622,7 @@ publications-section:
             >
             A new criterion function for exploratory blockmodeling for
             structural and regular equivalence
-          year: '2013'
+          year: 2013
           link:
             >
             http://www.sciencedirect.com/science/article/pii/S0378873312000676
@@ -620,13 +633,13 @@ publications-section:
             >
             Alternating Optimization Algorithm for Block-modeling Two-way
             Two-mode Data with Unknown Number of Clusters
-          year: '2011'
+          year: 2011
           link:
           proceedings: Regular Session on Social Networks for the 2011 ASA
 
         - author: Goldstein, D., Shehab, T., Casse, J., and Lin, H.
           title: On the formulation and solution of the convoy routing problem
-          year: '2010'
+          year: 2010
           link:
               >
               http://www.sciencedirect.com/science/article/pii/S1366554509000398
@@ -637,11 +650,11 @@ publications-section:
 
         - author: Casse, J.I.
           title: Convoy Routing and Scheduling using Augmented Beam Search RSBS
-          year: '2008'
+          year: 2008
           link:
               >
-              'http://books.google.com/books/about/Convoy_Routing_and\
-              _Scheduling_Using_Augm.html?id=q2KjZN1XB6wC'
+              http://books.google.com/books/about/Convoy_Routing_and\
+              _Scheduling_Using_Augm.html?id=q2KjZN1XB6wC
           proceedings:
               >
               Master’s thesis, California State University, Long Beach, CA
